@@ -1,9 +1,11 @@
 import classes from './CardList.module.css';
+import Card from '../Card/Card';
 
 const journalsData = [
   {
     'id': 1,
     'country': 'Japan',
+    'image': '../../images/image1.svg',
     'locationName': 'Mount Fuji',
     'startDate': '2022-03-03',
     'endDate': '2022-03-22',
@@ -12,6 +14,7 @@ const journalsData = [
   {
     'id': 2,
     'country': 'Australia',
+    'image': '../../images/image2.svg',
     'locationName': 'Sydney Opera House',
     'startDate': '2022-05-27',
     'endDate': '2022-06-08',
@@ -20,6 +23,7 @@ const journalsData = [
   {
     'id': 3,
     'country': 'Norway',
+    'image': '../../images/image3.svg',
     'locationName': 'Geirangerfjord',
     'startDate': '2022-08-27',
     'endDate': '2022-09-18',
@@ -31,9 +35,15 @@ const CardList = (props) => {
   return (
     <div className={classes['card-list']}>
       { journalsData.map( (journal) => {
-        <div>
-          <h1>journal.title</h1>
-        </div>
+        return <Card
+          key = {journal.id}
+          country = {journal.country}
+          image = {journal.image}
+          locationName = {journal.locationName}
+          startDate = {journal.startDate}
+          endDate = {journal.endDate}
+          description = {journal.description}
+        />
       })}
     </div>
   )
