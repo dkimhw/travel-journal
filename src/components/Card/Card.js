@@ -3,9 +3,9 @@ import classes from './Card.module.css';
 
 const Card = (props) => {
   return (
-    <div class="travel-card">
+    <div class={classes['travel-card']}>
       <div className={classes['card-img-container']}>
-        <img src={props.image} alt="star" className={classes["star"]}/>
+        <img src={props.image} alt="Location" className={classes["location-img"]}/>
       </div>
       <div className={classes['card-content']}>
         <div className={classes['location']}>

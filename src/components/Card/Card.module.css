@@ -1,0 +1,20 @@
+
+.travel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-container {
+  flex-basis: 35%;
+}
+
+.location-img {
+  width: 75%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex-basis: 65%;
+  text-align: left;
+}
