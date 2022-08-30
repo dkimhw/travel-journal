@@ -1,0 +1,30 @@
+
+.navbar {
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.navbar-title {
+  color: #fff;
+  display: inline-block;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0 0 0 0.5rem;
+}
