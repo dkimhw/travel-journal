@@ -1,0 +1,12 @@
+
+.card-list {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+  .card-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
